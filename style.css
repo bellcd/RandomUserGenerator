@@ -1,0 +1,98 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Title area */
+#title {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#btn {
+  display: inline-block;
+  font-size: 1.1rem;
+  padding: 0.9rem 1.5rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+/* Author presentation area */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+  background-color: #70818B;
+}
+
+.author-tile {
+  background-color: #D9CEC6;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+div div img {
+  display: block;
+  margin: auto;
+  border-radius: 100%;
+}
+
+/* highlight box */
+.highlight-box {
+  text-align: center;
+}
+
+.user-title {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.user-value {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+.user-value.name, .user-value.address {
+  text-transform: capitalize;
+}
+
+.toggle-content {
+  display: none;
+}
+
+.toggle-content.is-visible {
+  display: block;
+}
+
+/* ul of headers */
+.values-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* li inside the ul of headers */
+.values-list li {
+  padding: 0.5rem;
+}
+
+/* p inside li inside ul of headers */
+.values-list li p {
+  margin: 0;
+  font-size: 1.1rem;
+  /* padding: 1rem; */
+}
+
+.values-list li p:hover {
+  text-decoration: underline;
+  color: #0C1824;
+}

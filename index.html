@@ -1,0 +1,35 @@
+<!--
+Program Name: Random User Generator
+Author: Christian Bell
+Description: This website demonstrates grabbing and displaying simple data from an api - built in vanilla HTML, CSS & JavaScrispt.
+Inputs: user data from https://randomuser.me
+Outputs: Formats and displays user data.
+Preconditions: n/a
+Postconditions: n/a
+Assertions: n/a
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Random User Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,900" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">Authors</h1>
+    <div class="wrapper">
+      <button id="btn" type="button" name="button">Generate New Authors!</button>
+    </div>
+    <div class="container">
+    </div>
+
+<!--
+Uses Mathias Bynens CSS.escape polyfill
+https://github.com/mathiasbynens/CSS.escape
+-->
+    <script src="css.escape.js"></script>
+    <script src="randomUserGenerator.js"></script>
+  </body>
+</html>
