@@ -2,6 +2,23 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+:root {
+  --red1: #E01600;
+  --red2: #A11000;
+  --red3: #940E00;
+  --red4: #7A0C00;
+  --red5: #540800;
+  /*  */
+  --gray1: #F0F0F0;
+  --gray2: #E3E3E3;
+  --gray3: #C9C9C9;
+  --gray4: #636363;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  color: var(--gray4);
+}
+
 /* Title area */
 #title {
   text-align: center;
@@ -18,6 +35,15 @@ body {
   padding: 0.9rem 1.5rem;
   margin: 1rem;
   cursor: pointer;
+  border: none;
+  background-color: var(--red4);
+  color: white;
+}
+
+#btn:hover {
+  background-color: white;
+  color: var(--red1);
+  border: 1px var(--red1) dashed;
 }
 
 /* Author presentation area */
@@ -27,19 +53,25 @@ body {
   flex-direction: row;
   justify-content: space-around;
   margin: 0 auto;
-  background-color: #70818B;
 }
 
 .author-tile {
-  background-color: #D9CEC6;
+  background-color: var(--gray1);
   padding: 1rem;
   margin: 1rem;
+  /*  */
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.24);
+  /*  */
+  border-radius: 0.5rem;
 }
 
 div div img {
   display: block;
   margin: auto;
   border-radius: 100%;
+  border: 3px white solid;
 }
 
 /* highlight box */
@@ -55,6 +87,7 @@ div div img {
 .user-value {
   font-size: 1.3rem;
   font-weight: 900;
+  color: var(--red2);
 }
 
 .user-value.name, .user-value.address {
@@ -89,7 +122,7 @@ div div img {
 .values-list li p {
   margin: 0;
   font-size: 1.1rem;
-  /* padding: 1rem; */
+  color: var(--gray3);
 }
 
 .values-list li p:hover {
