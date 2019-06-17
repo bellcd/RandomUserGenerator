@@ -1,5 +1,9 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Barlow', sans-serif;
+}
+
+body:not(.user-is-tabbing) button:focus {
+  outline: none;
 }
 
 :root {
@@ -19,6 +23,11 @@ h1, h2, h3, h4, h5, h6, p {
   color: var(--gray4);
 }
 
+h1 {
+  font-weight: 100;
+  letter-spacing: 0.5rem;
+}
+
 /* Title area */
 #title {
   text-align: center;
@@ -35,9 +44,11 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0.9rem 1.5rem;
   margin: 1rem;
   cursor: pointer;
-  border: none;
+  border: 1px white solid;
   background-color: var(--red4);
   color: white;
+  font-weight: 300;
+  letter-spacing: 0.10rem;
 }
 
 #btn:hover {
@@ -88,6 +99,7 @@ div div img {
   font-size: 1.3rem;
   font-weight: 900;
   color: var(--red2);
+  font-family: 'Cinzel', serif;
 }
 
 .user-value.name, .user-value.address {
